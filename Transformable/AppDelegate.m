@@ -16,7 +16,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    NSManagedObject* obj1 = [NSEntityDescription insertNewObjectForEntityForName:@"Entity" inManagedObjectContext:self.managedObjectContext];
+    [obj1 setValue:[NSURL URLWithString:@"www.flatstack.com"] forKey:@"attribute"];
+    
+    NSManagedObject* obj2 = [NSEntityDescription insertNewObjectForEntityForName:@"Entity" inManagedObjectContext:self.managedObjectContext];
+    [obj2 setValue:@"Some text" forKey:@"attribute"];
+    
+    [self saveContext];
+    
+    
+    NSFetchRequest* request = [NSFetchRequest fetchRequestWithEntityName:@"Entity"];
+    NSArray* array = [self.managedObjectContext executeFetchRequest:request error:nil];
+    for (NSManagedObject* obj in array) {
+        [self.managedObjectContext deleteObject:obj];
+        NSLog(@"attribute - %@\n", [obj valueForKey:@"attribute"]);
+        
+    }
     return YES;
 }
 

@@ -15,6 +15,7 @@
 		A45379B51A70F29F00119DFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A45379B41A70F29F00119DFD /* Images.xcassets */; };
 		A45379B81A70F29F00119DFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A45379B61A70F29F00119DFD /* LaunchScreen.xib */; };
 		A45379C41A70F29F00119DFD /* TransformableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A45379C31A70F29F00119DFD /* TransformableTests.m */; };
+		A45379CF1A70F2D500119DFD /* AttributeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A45379CE1A70F2D500119DFD /* AttributeTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		A45379BD1A70F29F00119DFD /* TransformableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45379C21A70F29F00119DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A45379C31A70F29F00119DFD /* TransformableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransformableTests.m; sourceTree = "<group>"; };
+		A45379CD1A70F2D500119DFD /* AttributeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AttributeTransformer.h; path = ../AttributeTransformer.h; sourceTree = "<group>"; };
+		A45379CE1A70F2D500119DFD /* AttributeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AttributeTransformer.m; path = ../AttributeTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				A45379B41A70F29F00119DFD /* Images.xcassets */,
 				A45379B61A70F29F00119DFD /* LaunchScreen.xib */,
 				A45379AB1A70F29F00119DFD /* Transformable.xcdatamodeld */,
+				A45379CD1A70F2D500119DFD /* AttributeTransformer.h */,
+				A45379CE1A70F2D500119DFD /* AttributeTransformer.m */,
 				A45379A41A70F29F00119DFD /* Supporting Files */,
 			);
 			path = Transformable;
@@ -226,6 +231,7 @@
 				A45379AD1A70F29F00119DFD /* Transformable.xcdatamodeld in Sources */,
 				A45379B01A70F29F00119DFD /* ViewController.m in Sources */,
 				A45379A71A70F29F00119DFD /* main.m in Sources */,
+				A45379CF1A70F2D500119DFD /* AttributeTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
